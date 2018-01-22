@@ -2,9 +2,9 @@ var playlist = {
   artistName: "songTitle"
 };
 
-function updatePlaylist (object, propertie, value) {
-  object.propertie = value
-  return object
+function updatePlaylist (playlist, artistName, songTitle) {
+  playlist[artistName] = songTitle
+  return playlist
 }
 
 function removeFromPlaylist (object, propertie) {
